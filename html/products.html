@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Chokers offers high-quality men's T-shirts designed for comfort, style, and confidence. Shop the latest men's collection today.">
+  <meta name="keywords" content="Chokers, men's t-shirts, casual wear, cotton tees, fashion tees">
+  <meta name="author" content="Tauhid Nibir">
+
+  <!-- favicon -->
+  <link rel="icon" href="../images/Logo.jpg" type="image/x-icon">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="../Style/products.css">
+  <link rel="stylesheet" href="../Style/main.css">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+  <title>Chokers — Men's T-Shirts</title>
+</head>
+<body>
+  <!-- ===== HEADER ===== -->
+  <header class="container" id="header">
+    <div class="header_top">
+      <div class="header_social">
+        <a href="https://www.instagram.com/chokers.clothing?igsh=bTh3MXVmY2NyaHRt" target="_blank">
+          <ion-icon name="logo-instagram"></ion-icon>
+        </a>
+        <a href="https://www.facebook.com/share/1AFke8iUXL/" target="_blank">
+          <ion-icon name="logo-facebook"></ion-icon>
+        </a>
+        <a href="https://wa.me/01893399532" target="_blank">
+          <ion-icon name="logo-whatsapp"></ion-icon>
+        </a>
+      </div>
+
+      <img src="../images/Logo.jpg" alt="Chokers Logo" id="logo">
+
+      <div class="header_actions">
+        <div id="display_login">
+          <span id="user_name">Tauhid Nibir</span>
+          <a href="#" id="logout" title="Logout" onclick="logout();">
+            <ion-icon name="log-out-outline"></ion-icon>
+          </a>
+        </div>
+        <a href="login.html" title="Login" id="login_btn">
+          <ion-icon name="person-circle-outline"></ion-icon>
+        </a>
+        <a href="#" class="icon-cart">
+          <ion-icon name="cart-outline"></ion-icon>
+          <span id="cart-counter">0</span>
+        </a>
+      </div>
+    </div>
+
+    <nav>
+      <menu>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html" class="active">Shop</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </menu>
+    </nav>
+  </header>
+
+  <!-- ===== MAIN CONTENT ===== -->
+  <main>
+    <div class="container">
+      <!-- ===== PRODUCTS ===== -->
+      <div class="products">
+        <div class="content">
+          <section class="product-section">
+            <h2>Men’s T-Shirts</h2>
+            <p>Explore our premium men's T-shirts — stylish, comfortable, and perfect for daily wear.</p>
+
+            <div class="product-container">
+              <div class="product-gallery">
+                <h3>Charcoal Grey Polo — Views</h3>
+                <div class="gallery">
+                  <div class="small-img">
+                    <img src="../images/man/Charcoal Grey Front.jpg" alt="Front View">
+                    <p>Front</p>
+                  </div>
+                  <div class="small-img">
+                    <img src="../images/man/Charcoal Grey Back.jpg" alt="Back View">
+                    <p>Back</p>
+                  </div>
+                  <div class="small-img">
+                    <img src="../images/man/Charcoal Grey Left.jpg" alt="Left View">
+                    <p>Left</p>
+                  </div>
+                  <div class="small-img">
+                    <img src="../images/man/Charcoal Grey Right.jpg" alt="Right View">
+                    <p>Right</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="product-info">
+                <h3>Charcoal Grey Polo</h3>
+                <p>Crafted from soft cotton blend for lasting comfort and modern style. Perfect for everyday wear or casual outings.</p>
+                <p class="price">৳899</p>
+
+                <h4>Available Colors:</h4>
+                <div class="color-options">
+                  <span class="color charcoal active" title="Charcoal Grey"></span>
+                  <span class="color navy" title="Navy Blue"></span>
+                  <span class="color maroon" title="Maroon"></span>
+                </div>
+
+                <button class="buy-btn">Add to Cart</button>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- ===== CART SECTION ===== -->
+  <div class="cart-section">
+    <div class="cart-header">
+      <h2>SHOPPING CART</h2>
+      <div class="closeCart">
+        <ion-icon name="close-outline" id="closeCart"></ion-icon>
+      </div>
+    </div>
+
+    <div class="cart_products">
+      <!-- Cart products in JS -->
+    </div>
+
+    <div class="cart_total">
+      <h3>Total:</h3>
+      <span id="total_price"></span>
+    </div>
+
+    <div class="btn_control">
+      <button class="viewCart" onclick="viewCart();">View Cart</button>
+      <button class="checkout" onclick="checkOut();">Check Out</button>
+    </div>
+  </div>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-logo">
+        <img src="../images/Logo.jpg" alt="Chokers Logo" width="140">
+        <p>Chokers brings premium-quality men's T-shirts — simple, stylish, and made for everyday comfort.</p>
+      </div>
+
+      <div class="footer-list">
+        <div class="list">
+          <h4>SHOP</h4>
+          <ul>
+            <li><a href="#">Men’s Collection</a></li>
+            <li><a href="#">New Arrivals</a></li>
+            <li><a href="#">Sale</a></li>
+          </ul>
+        </div>
+        <div class="list">
+          <h4>HELP</h4>
+          <ul>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Payment Methods</a></li>
+            <li><a href="#">Delivery Info</a></li>
+            <li><a href="#">Returns & Exchanges</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p class="footer-company-name">
+        © 2025 All rights reserved — Designed by 
+        <a href="https://www.facebook.com/tauhid.nibir.23" target="_blank" id="author">Tauhid Nibir</a>
+      </p>
+    </div>
+  </footer>
+
+  <button id="scrollBtn"><ion-icon name="arrow-up-outline" id="btn-up"></ion-icon></button>
+
+  <!-- JS -->
+  <script src="../JavaScript/main.js"></script>
+  <script src="../JavaScript/cart.js"></script>
+  <script src="../JavaScript/getData.js"></script>
+</body>
+</html>

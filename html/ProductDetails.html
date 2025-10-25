@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore premium men's T-shirts at Chokers. Stylish, comfortable, and crafted for everyday wear — discover your perfect tee today.">
+  <meta name="keywords" content="Chokers, men's t-shirts, cotton tees, casual wear, premium fashion">
+  <meta name="author" content="Tauhid Nibir">
+
+  <!-- Favicon -->
+  <link rel="icon" href="../images/Logo.jpg" type="image/x-icon">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="../Style/productDetails.css">
+  <link rel="stylesheet" href="../Style/main.css">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+  <!-- Animation -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.6/lottie.min.js"></script>
+
+  <title>Chokers | Men's T-Shirt Details</title>
+</head>
+
+<body>
+  <!-- ===== HEADER ===== -->
+  <header class="container" id="header">
+    <div class="header_top">
+      <div class="header_social">
+        <a href="https://www.instagram.com/chokers.clothing?igsh=bTh3MXVmY2NyaHRt" target="_blank">
+          <ion-icon name="logo-instagram"></ion-icon>
+        </a>
+        <a href="https://www.facebook.com/share/1AFke8iUXL/" target="_blank">
+          <ion-icon name="logo-facebook"></ion-icon>
+        </a>
+        <a href="https://wa.me/01893399532" target="_blank">
+          <ion-icon name="logo-whatsapp"></ion-icon>
+        </a>
+      </div>
+
+      <img src="../images/Logo.jpg" alt="Chokers Logo" id="logo">
+
+      <div class="header_actions">
+        <div id="display_login">
+          <a href="#" id="logout" onclick="logout();">
+            <span id="signout">Sign Out</span>
+            <ion-icon name="log-out-outline"></ion-icon>
+          </a>
+        </div>
+        <a href="login.html" title="Login" id="login_btn">
+          <ion-icon name="person-circle-outline"></ion-icon>
+        </a>
+        <a href="#" class="icon-cart">
+          <ion-icon name="cart-outline"></ion-icon>
+          <span id="cart-counter">0</span>
+        </a>
+      </div>
+    </div>
+
+    <nav>
+      <menu>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html" class="active">Shop</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </menu>
+    </nav>
+  </header>
+
+  <!-- ===== MAIN SECTION ===== -->
+  <main>
+    <div class="container">
+      <div class="productDetails">
+        <div class="images">
+          <img id="product_image" src="" alt="Men's T-Shirt Image">
+        </div>
+        <div class="details">
+          <span class="category_name">Men’s T-Shirt</span>
+          <h2 class="product_name"></h2>
+          <h3 class="product_price"></h3>
+          <p class="product_des"></p>
+          <div class="buttons">
+            <div class="counts">
+              <button id="minus" class="counts_btns">-</button>
+              <input type="number" inputmode="numeric" name="productCount" min="1" step="1" max="999" class="product_count" id="productCount" value="1">
+              <button id="plus" class="counts_btns">+</button>
+            </div>
+            <button id="btn_add">Add To Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- ===== TOAST MESSAGE ===== -->
+  <div class="toast-overlay" id="toast-overlay">
+    <div class="success-msg">
+      <div id="checkIcon" style="width: 100px; height: 100px;"></div>
+      <h4>Your item has been added to the shopping bag</h4>
+    </div>
+  </div>
+
+  <!-- ===== CART SECTION ===== -->
+  <div class="cart-section">
+    <div class="cart-header">
+      <h2>SHOPPING CART</h2>
+      <div class="closeCart">
+        <ion-icon name="close-outline" id="closeCart"></ion-icon>
+      </div>
+    </div>
+    <div class="cart_products"></div>
+    <div class="cart_total">
+      <h3>Total:</h3>
+      <span id="total_price"></span>
+    </div>
+    <div class="btn_control">
+      <button class="viewCart" onclick="viewCart();">View Cart</button>
+      <button class="checkout" onclick="checkOut();">Check Out</button>
+    </div>
+  </div>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-logo">
+        <img src="../images/logo_block.jpg" alt="Chokers Logo" width="140">
+        <p>Chokers delivers premium-quality men's T-shirts — designed for comfort and style.</p>
+      </div>
+      <div class="footer-list">
+        <div class="list">
+          <h4>SHOP</h4>
+          <ul>
+            <li><a href="#">Men’s Collection</a></li>
+            <li><a href="#">New Arrivals</a></li>
+            <li><a href="#">Sale</a></li>
+          </ul>
+        </div>
+        <div class="list">
+          <h4>CUSTOMER SERVICE</h4>
+          <ul>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Payment Methods</a></li>
+            <li><a href="#">Delivery Info</a></li>
+            <li><a href="#">Returns & Exchanges</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p class="footer-company-name">
+        © 2025 All rights reserved — Made by
+        <a href="https://www.facebook.com/tauhid.nibir.23" target="_blank" id="author">Tauhid Nibir</a>
+      </p>
+    </div>
+  </footer>
+
+  <button id="scrollBtn"><ion-icon name="arrow-up-outline" id="btn-up"></ion-icon></button>
+
+  <!-- JS -->
+  <script src="../JavaScript/main.js"></script>
+  <script src="../JavaScript/getDetails.js"></script>
+  <script src="../JavaScript/cart.js"></script>
+</body>
+</html>
